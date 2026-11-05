@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MapGIS 转 DXF 工具</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Microsoft YaHei", "微软雅黑", sans-serif; background: #f2f4f7; color: #222; padding: 24px 16px; }
+.card { max-width: 640px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 28px 24px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+h1 { font-size: 22px; margin-bottom: 6px; }
+.sub { color: #666; font-size: 14px; margin-bottom: 20px; line-height: 1.6; }
+h2 { font-size: 16px; margin: 20px 0 8px; }
+ul { padding-left: 20px; line-height: 1.9; font-size: 14px; }
+.note { background: #fffbe6; border: 1px solid #ffe58f; border-radius: 8px; padding: 14px; font-size: 14px; line-height: 1.7; margin-top: 20px; }
+.foot { max-width: 640px; margin: 16px auto 0; color: #999; font-size: 12px; text-align: center; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>MapGIS 转 DXF 工具</h1>
+  <p class="sub">MapGIS 6.x / 6.7 二进制 .wt / .wl / .wp 转 DXF，Windows 免安装 exe，当前定稿版 v2.5。</p>
+  <h2>能做什么</h2>
+  <ul>
+    <li>导入 .wt 点、.wl 线、.wp 面，坐标原值不做投影换算</li>
+    <li>导出 DXF R12（AC1009），各家 CAD 兼容性最好</li>
+    <li>中文图层名与注记按 GBK 写，注记按记录长度取段</li>
+    <li>字体锁定：中文宋体 SimSun，英文 / 数字 Times New Roman</li>
+    <li>颜色索引原样写入组码 62（1–255，超范围随层）</li>
+    <li>文字字高按源文件等比例输出，不全局缩放</li>
+  </ul>
+  <h2>还不支持</h2>
+  <ul>
+    <li>MapGIS 10 新格式与明码 .wat / .wal / .wap</li>
+    <li>面填充图案（当前只出闭合边框，CAD 里可手动 HATCH）</li>
+    <li>属性、符号库、填充图案不导出</li>
+  </ul>
+  <div class="note">下载：exe 文件较大，不放这个静态站上。需要最新版 MapGIS2CAD.exe 时在聊天里找我拿，我发你最新验证过的版本。360 / Defender 可能报毒，未签名 exe 需加信任区放行。</div>
+</div>
+<p class="foot">域名：55575575.pu.gy · 到期 2027-11-06</p>
+</body>
+</html>
